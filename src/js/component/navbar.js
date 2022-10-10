@@ -20,7 +20,7 @@ export const Navbar = ({ item, resource }) => {
 				<div className="ml-auto">
 					<div className="dropdown">
 						<button className="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-							Favorites <span class="badge bg-secondary">{store.favorites.length}</span>
+							Favorites <span class="badge bg-secondary">{store.favorites.length==0?"empty":store.favorites.length}</span>
 						</button>
 						<ul className="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuClickableInside">
 							{store.favorites.map((favorite, i) => {
